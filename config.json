@@ -1,0 +1,53 @@
+{
+  "type": "network",
+  "version": "1.0",
+  "data": "data.json",
+  "logo": {
+    "text": "Milos Resimic",
+    "file": "",
+    "link": ""
+  },
+  "text": {
+    "title": "Community structure around seven presidential candidates in Serbian elections",
+    "more": "The largest nodes in the middle of the network represent presidential candidates, different colors for different candidates. You can zoom in, and by clicking on a particular presidential candidate, the network will show only his community,while descriptive statistics will appear on the right side of the visualization.",
+    "intro": "I searched Twitter for retweets or replies to for 7 presidential candidates for Serbian elections (Sasa Jankovic, Aleksandar Vucic, Luka Maksimovic, Bosko Obradovic, Vojislav Seselj, Sasa Radulovic, Vuk Jeremic). The network consists of 14 591 edges and 6058 nodes. Nodes are sized based on weighted indegree, and colored based on modularity class.  "
+  },
+  "legend": {
+    "edgeLabel": "reply to or retweet",
+    "colorLabel": "Modularity class",
+    "nodeLabel": "Twitter user"
+  },
+  "features": {
+    "search": true,
+    "groupSelectorAttribute": "color",
+    "hoverBehavior": "dim"
+  },
+  "informationPanel": {
+    "imageAttribute": false,
+    "groupByEdgeDirection": true
+  },
+  "sigma": {
+    "graphProperties": {
+      "minEdgeSize": 0.2,
+      "maxNodeSize": 7,
+      "maxEdgeSize": 0.5,
+      "minNodeSize": 1
+    },
+    "drawingProperties": {
+      "labelThreshold": 10,
+      "hoverFontStyle": "bold",
+      "defaultEdgeType": "curve",
+      "defaultLabelColor": "#000",
+      "defaultLabelHoverColor": "#fff",
+      "defaultLabelSize": 14,
+      "activeFontStyle": "bold",
+      "fontStyle": "bold",
+      "defaultHoverLabelBGColor": "#002147",
+      "defaultLabelBGColor": "#ddd"
+    },
+    "mouseProperties": {
+      "minRatio": 0.75,
+      "maxRatio": 20
+    }
+  }
+}
